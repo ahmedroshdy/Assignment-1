@@ -1,4 +1,5 @@
 # Assignment-1
+
 1. What is a class?
 A class is a programming construct that defines the common state and behavior of a group of similar objects and class has its name that describe the state(data member) and services(member functions)provided by objects that are instances of that class
 -Another defination 
@@ -12,6 +13,7 @@ it accomplish encapsulation (each member function in class doesn't know the impl
 A data hiding (data member can be acessed only through member functions) 
 -Another answer :D 
 A class represents the operations you can perform on a class object with a public interface of class methods; this is abstraction.The class can use private visibility (the default) for data members, meaning that the data can be accessed only through the member functions; this is data hiding. Details of the implementation, such as data representation and method code, are hidden; this is encapsulation.
+
                                     ****************************************
                                     
 3. What is the relationship between an object and a class?
@@ -23,3 +25,11 @@ the same as that between a standard type and a variable of that type.
 
                                      **************************************
                                      
+4. In what way, aside from being functions, are class function members different from class data members?                 
+class data members are private and can access only through fuction members, but class function members are public and can be accessed through users to modify it and use them outside the class 
+-Another answer :D
+If you create several objects of a given class, each object comes with storage for its own set of data. But all the objects use the one set of member functions. (Typically, methods are public and data members are private, but that’s a matter of policy, not of class requirements.
+
+                                    ************************************
+                                    
+                                    
