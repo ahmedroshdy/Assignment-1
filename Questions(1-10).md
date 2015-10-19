@@ -7,7 +7,7 @@ A class is a definition of a user-defined type. A class declaration specifies ho
 
                                   ***************************************
 
-2-How does a class accomplish abstraction, encapsulation, and datahiding?
+2.How does a class accomplish abstraction, encapsulation, and datahiding?
 A class accomplish abstraction by using public interface (member functions) that describe operations when you call object from a class.(member fuctions are well defined so i can use it in objects without needing implmentation details, only what i want to know how to use it and what it do)
 it accomplish encapsulation (each member function in class doesn't know the implentation details of another member function. it knows only how to use it (call it i mean) ).
 A data hiding (data member can be acessed only through member functions) 
@@ -30,6 +30,37 @@ class data members are private and can access only through fuction members, but 
 -Another answer :D
 If you create several objects of a given class, each object comes with storage for its own set of data. But all the objects use the one set of member functions. (Typically, methods are public and data members are private, but that’s a matter of policy, not of class requirements.
 
-                                    ************************************
+                                    ***********************************
                                     
-                                    
+5. Define a class to represent a bank account. Data members should include the depositor’s name, the account number (use a string), and the balance. Member functions should allow the following:
+n Creating an object and initializing it.
+n Displaying the depositor’s name, account number, and balance
+n Depositing an amount of money given by an argument
+n Withdrawing an amount of money given by an argument
+Just show the class declaration, not the method implementations.
+(Programming Exercise 1 provides you with an opportunity to write the implementation.) Programming Exercises 559  
+#include<string>
+using namespace std;
+class BankAccount{
+private:
+	string depositor_name;
+	string account_number;  
+	double balance; 
+
+public:
+	BankAccount(string &name, string &account, double &balance); //allowing to create object and initialize it
+	void show(); //Displaying the depositor’s name, account number, and balance
+	void deposit(double money); //Depositing an amount of money given by an argument
+	void withdraw(double money); //Withdrawing an amount of money given by an argument
+};                               
+
+                                        ****************************************
+                                        
+6. When are class constructors called? When are class destructors called?
+A class constructors is called when you want to create object of this class or when you want to call the constructor itself.
+A class destructor is called when use of object in code expires.
+
+                                          ***************************************
+                                          
+7. Provide code for a constructor for the bank account class from Chapter Review Question 5.
+  
