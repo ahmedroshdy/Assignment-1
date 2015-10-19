@@ -48,8 +48,8 @@ private:
 	double balance; 
 
 public:
-	BankAccount(string &name, string &account, double &balance); //allowing to create object and initialize it
-	void show(); //Displaying the depositor’s name, account number, and balance
+	BankAccount(string name, string account, double balance); //allowing to create object and initialize it
+	void show(); //Displaying the depositors name, account number, and balance
 	void deposit(double money); //Depositing an amount of money given by an argument
 	void withdraw(double money); //Withdrawing an amount of money given by an argument
 };                               
@@ -63,4 +63,21 @@ A class destructor is called when use of object in code expires.
                                           ***************************************
                                           
 7. Provide code for a constructor for the bank account class from Chapter Review Question 5.
+  BankAccount::BankAccount(string name, string account, double bal ){
+	depositor_name = name;
+	account_number = account;
+	balance = bal;
+}
+
+                                          *******************************************
+                                          
+ 8. What is a default constructor? What is the advantage of having one?
+ Default constructor is a constructor has default values and works after instance object from the class which in.
+The advantage of having one is not needed to intialize objects when declare it ( when declare object, it intialize it with default values i set it before in class)
+Another answer :D
+A default constructor either has no arguments or has defaults for all the arguments.
+Having a default constructor enables you to declare objects without initializing them, even if you’ve already defined an initializing constructor. It also allows you to declare arrays.
+
+                                            **********************************
+                                            
   
