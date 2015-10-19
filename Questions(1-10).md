@@ -72,7 +72,7 @@ A class destructor is called when use of object in code expires.
                                           *******************************************
                                           
  8. What is a default constructor? What is the advantage of having one?
- Default constructor is a constructor has default values and works after instance object from the class which in.
+ Default constructor is a constructor has default values and works after instance object from the class which in and that is used to create an object when you don’t provide explicit initialization values.
 The advantage of having one is not needed to intialize objects when declare it ( when declare object, it intialize it with default values i set it before in class)
 Another answer :D
 A default constructor either has no arguments or has defaults for all the arguments.
@@ -80,4 +80,40 @@ Having a default constructor enables you to declare objects without initializing
 
                                             **********************************
                                             
-  
+9. Modify the Stock class definition (the version in stock20.h) so that it has member functions that return the values of the individual data members. Note:A member that returns the company name should not provide a weapon for altering the array.
+That is, it can’t simply return a string reference. It could return a const reference.
+#ifndef STOCK30_H_
+#define STOCK30_H_
+#include <string>
+class Stock
+{
+private:
+	std::string company;
+	int shares;
+	double share_val;
+	double total_val;
+	void set_tot() { total_val = shares * share_val; }
+public:
+	Stock(); // default constructor
+	Stock(const std::string & co, long n = 0, double pr = 0.0);
+	~Stock(); // do-nothing destructor
+	void buy(long num, double price);
+	void sell(long num, double price);
+	void update(double price);
+	void show()const;
+	const Stock & topval(const Stock & s) const;
+	const std::string & com_name(){ return company; }; //new1
+	int numshares(){ return shares; };            //new2
+	double shareval(){ return share_val; };          //new3
+	double total_val(){ return total_val; };           //new4
+};
+#endif
+
+                                ******************************************
+                                
+10. What are this and *this?
+   This is pointer points to the address of the object and *this points to object it self.
+more detailed answer :D :D 
+The this pointer is available to class methods. It points to the object used to invoke the method.Thus, this is the address of the object, and *this represents the bject itself.
+
+                                       *************************************
