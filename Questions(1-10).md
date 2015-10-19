@@ -48,7 +48,7 @@ private:
 	double balance; 
 
 public:
-	BankAccount(string name, string account, double balance); //allowing to create object and initialize it
+	BankAccount(string name, string account, double bal); //allowing to create object and initialize it
 	void show(); //Displaying the depositors name, account number, and balance
 	void deposit(double money); //Depositing an amount of money given by an argument
 	void withdraw(double money); //Withdrawing an amount of money given by an argument
