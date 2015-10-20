@@ -38,7 +38,7 @@ n Displaying the depositor’s name, account number, and balance
 n Depositing an amount of money given by an argument
 n Withdrawing an amount of money given by an argument
 Just show the class declaration, not the method implementations.
-(Programming Exercise 1 provides you with an opportunity to write the implementation.) Programming Exercises 559  
+(Programming Exercise 1 provides you with an opportunity to write the implementation.) Programming Exercises 559
 #include<string>
 using namespace std;
 class BankAccount{
